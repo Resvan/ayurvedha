@@ -17,7 +17,7 @@ const BannerSection = () => {
           pb:'93px'
       }}>
           <Container maxWidth='lg' sx={{
-              padding: '0px !important',
+              padding: { md: '0px !important' },
           }}>
               <Grid container spacing={'56px'}>
                   <Grid item xs={12}>

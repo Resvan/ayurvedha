@@ -12,7 +12,7 @@ const Journey = () => {
             position:'relative'
         }}>
             <Container maxWidth='lg' sx={{
-                padding: '0px !important',
+                padding: { md: '0px !important' },
             }}>
                 <Grid container spacing={'70px'}>
                     <Grid item xs={12} md={6} >
