@@ -309,7 +309,7 @@ const Navbar = () => {
                     </Box>
                 </Box>
                 <Box sx={{
-                    display: 'flex',
+                    display: { xs: 'none', md: 'flex' },
                     background: 'white',
                     justifyContent: 'space-around',
                     py: '18px',
