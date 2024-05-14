@@ -39,8 +39,8 @@ const Journey = () => {
                                     background: 'rgba(31, 60, 17, 0.10)',
                                     boxShadow: '0px 4px 6.5px 0px rgba(0, 0, 0, 0.25)',
                                     backdropFilter: 'blur(50px)',
-                                    bottom: '25%',
-                                    right: '-5%',
+                                    bottom: { xs: '5%', md: '25%' },
+                                    right: { xs: '0', md: '-5%' },
                                     width: '251px'
                                 }}>
                                     <Typography sx={{

@@ -182,6 +182,7 @@ const Navbar = () => {
                             color: selected === i ? '#146D57' : '#4B2D1D',
                             borderBottom: selected === i ? '2px solid #146D57' : 'none',
                             cursor: 'pointer',
+                            textWrap:'nowrap'
                         }}
                             onClick={()=>setSelected(i)}
                         >

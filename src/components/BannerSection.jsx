@@ -19,7 +19,7 @@ const BannerSection = () => {
           <Container maxWidth='lg' sx={{
               padding: '0px !important',
           }}>
-              <Grid container>
+              <Grid container spacing={'56px'}>
                   <Grid item xs={12}>
                       <Box sx={{
                           display: 'flex',
@@ -48,7 +48,7 @@ const BannerSection = () => {
                           color: 'white',
                           fontFamily: 'Butler',
                           fontWeight: 900,
-                          fontSize: '90px',
+                          fontSize: { xs: '65px', md: '90px' },
                           lineHeight: 'normal',
                           mb:'24px'
                       }}>
@@ -165,66 +165,75 @@ const BannerSection = () => {
                   <Grid item md={6} xs={12}>
                       <Box sx={{
                           display: 'flex',
-                          gap:'61px'
+                          gap: '61px',
+                          flexDirection:{xs:'column', md:'row'}
                       }}>
-                          <Box sx={{
-                              position:'relative'
-                          }}>
-                              <Typography sx={{
-                                  color: '#D5E2D8',
-                                  fontFamily: 'Bulter',
-                                  fontSize: '32px',
-                                  fontWeight: 300,
-                                  lineHeight: 'normal',
-                                  position: 'absolute',
-                                  top: '-35%',
-                                  right:'-30%'
+                          <Box>
+                              <Box sx={{
+                                  position: 'relative',
+                                  width: 'fit-content'
                               }}>
-                                  +
-                             </Typography>
-                              <Typography sx={{
-                                  color: '#F0A901',
-                                  fontFamily: "Butler",
-                                  fontSize: '46px',
-                                  fontWeight: 300,
-                                  lineHeight:'normal'
-                              }}>
-                                  100
-                              </Typography>
+                                  <Typography sx={{
+                                      color: '#D5E2D8',
+                                      fontFamily: 'Bulter',
+                                      fontSize: '32px',
+                                      fontWeight: 300,
+                                      lineHeight: 'normal',
+                                      position: 'absolute',
+                                      top: '-35%',
+                                      right: '-30%'
+                                  }}>
+                                      +
+                                  </Typography>
+                                  <Typography sx={{
+                                      color: '#F0A901',
+                                      fontFamily: "Butler",
+                                      fontSize: '46px',
+                                      fontWeight: 300,
+                                      lineHeight: 'normal'
+                                  }}>
+                                      100
+                                  </Typography>
+
+                              </Box>
                               <Typography sx={{
                                   color: '#FBF7EC',
                                   fontFamily: 'Butler',
                                   fontSize: '24px',
                                   fontWeight: 300,
-                                  lineHeight:'normal'
+                                  lineHeight: 'normal'
                               }}>
                                   Rooms
                               </Typography>
                           </Box>
-                          <Box sx={{
-                              position: 'relative'
-                          }}>
-                              <Typography sx={{
-                                  color: '#D5E2D8',
-                                  fontFamily: 'Bulter',
-                                  fontSize: '32px',
-                                  fontWeight: 300,
-                                  lineHeight: 'normal',
-                                  position: 'absolute',
-                                  top: '-35%',
-                                  right: '-10%'
+                         
+                          <Box>
+                              <Box sx={{
+                                  position: 'relative',
+                                  width: 'fit-content'
                               }}>
-                                  +
-                              </Typography>
-                              <Typography sx={{
-                                  color: '#F0A901',
-                                  fontFamily: "Butler",
-                                  fontSize: '46px',
-                                  fontWeight: 300,
-                                  lineHeight: 'normal'
-                              }}>
-                                  10
-                              </Typography>
+                                  <Typography sx={{
+                                      color: '#D5E2D8',
+                                      fontFamily: 'Bulter',
+                                      fontSize: '32px',
+                                      fontWeight: 300,
+                                      lineHeight: 'normal',
+                                      position: 'absolute',
+                                      top: '-35%',
+                                      right: '-30%'
+                                  }}>
+                                      +
+                                  </Typography>
+                                  <Typography sx={{
+                                      color: '#F0A901',
+                                      fontFamily: "Butler",
+                                      fontSize: '46px',
+                                      fontWeight: 300,
+                                      lineHeight: 'normal'
+                                  }}>
+                                      10
+                                  </Typography>
+                              </Box>
                               <Typography sx={{
                                   color: '#FBF7EC',
                                   fontFamily: 'Butler',
@@ -233,32 +242,37 @@ const BannerSection = () => {
                                   lineHeight: 'normal'
                               }}>
                                   Years of wellness
-                              </Typography>
+                              </Typography> 
                           </Box>
-                          <Box sx={{
-                              position: 'relative'
-                          }}>
-                              <Typography sx={{
-                                  color: '#D5E2D8',
-                                  fontFamily: 'Bulter',
-                                  fontSize: '32px',
-                                  fontWeight: 300,
-                                  lineHeight: 'normal',
-                                  position: 'absolute',
-                                  top: '-35%',
-                                  right: '-12%'
+
+                          <Box>
+                              <Box sx={{
+                                  position: 'relative',
+                                  width: 'fit-content'
+
                               }}>
-                                  +
-                              </Typography>
-                              <Typography sx={{
-                                  color: '#F0A901',
-                                  fontFamily: "Butler",
-                                  fontSize: '46px',
-                                  fontWeight: 300,
-                                  lineHeight: 'normal'
-                              }}>
-                                  3,400
-                              </Typography>
+                                  <Typography sx={{
+                                      color: '#D5E2D8',
+                                      fontFamily: 'Bulter',
+                                      fontSize: '32px',
+                                      fontWeight: 300,
+                                      lineHeight: 'normal',
+                                      position: 'absolute',
+                                      top: '-35%',
+                                      right: '-12%'
+                                  }}>
+                                      +
+                                  </Typography>
+                                  <Typography sx={{
+                                      color: '#F0A901',
+                                      fontFamily: "Butler",
+                                      fontSize: '46px',
+                                      fontWeight: 300,
+                                      lineHeight: 'normal'
+                                  }}>
+                                      3,400
+                                  </Typography>
+                              </Box>
                               <Typography sx={{
                                   color: '#FBF7EC',
                                   fontFamily: 'Butler',
@@ -269,6 +283,7 @@ const BannerSection = () => {
                                   Happy Guests
                               </Typography>
                           </Box>
+                        
                       </Box>
                   </Grid>
               </Grid>
