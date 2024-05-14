@@ -38,7 +38,7 @@ const BannerSection = () => {
                           <Typography sx={{
                               fontFamily: 'Open Sans',
                               fontWeight: 400,
-                              fontSize: '32px',
+                              fontSize: { xs: '25px', md: '32px' },
                               color: 'white'
                           }}>
                               Discover NirvanaNook
@@ -48,16 +48,17 @@ const BannerSection = () => {
                           color: 'white',
                           fontFamily: 'Butler',
                           fontWeight: 900,
-                          fontSize: { xs: '65px', md: '90px' },
+                          fontSize: { xs: '60px', md: '90px' },
                           lineHeight: 'normal',
-                          mb:'24px'
+                          mb: '24px',
+                          width:{xs:'100%', md:'70%'}
                       }}>
-                          Your Sanctuary for <br /> Mind, Body & Soul
+                          Your Sanctuary for  Mind, Body & Soul
                       </Typography>
                       <Typography sx={{
                           fontFamily: 'Open Sans',
                           fontWeight: 400,
-                          fontSize: '32px',
+                          fontSize: { xs: '23px', md: '32px' },
                           color: 'white',
                           mb:'36px'
                       }}>
